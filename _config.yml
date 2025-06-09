@@ -1,0 +1,57 @@
+title: "John Doe | Geospatial Engineer"
+email: johndoe@example.com
+description: >-
+  Final-year Geospatial Engineering student passionate about spatial data science, remote sensing, and environmental monitoring.
+baseurl: ""
+url: "https://yourusername.github.io"
+twitter_username: your_twitter
+github_username: yourgithub
+linkedin_username: yourlinkedin
+minimal_mistakes_skin: "default"
+search: true
+markdown: kramdown
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-include-cache
+
+author:
+  name: John Doe
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: >-
+    I’m a passionate geospatial engineer with hands-on experience in remote sensing, GIS, and spatial analysis. I’ve worked with data from SMAP, MODIS, and Landsat, and have a strong interest in using technology to address environmental and urban challenges.
+  location: Nairobi, Kenya
+  email: johndoe@example.com
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yourgithub"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/yourlinkedin"
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: true
+
+nav:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Contact"
+    url: "/contact/"
